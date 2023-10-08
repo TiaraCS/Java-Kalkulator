@@ -1,0 +1,65 @@
+import java.util.Scanner;
+public class XITEL10_TiaraCandySyaqila_PBO_TP02 {
+    public static void main(String[]args){
+        Scanner input = new Scanner (System.in);
+        System.out.print("Halo ! " );
+        String a = input.nextLine();
+         
+        while (true){
+            System.out.println("Selamat datang di kalkulator" );
+            System.out.println("-  Penjumlahan" );
+            System.out.println("-  Pengurangan" );
+            System.out.println("-  Perkalian" );
+            System.out.println("-  Pembagian" );
+            System.out.println("-  Modulus" );
+            System.out.println("Apa yang ingin kamu hitung?" );
+            String pilih = input.nextLine();
+            if(pilih == "penjumlahan" || pilih = "pengurangan" || pilih = "perkalian" || pilih = "pembagian" || pilih = "modulus"){
+            switch(pilih){
+               case "Penjumlahan" :
+                    System.out.print("Masukkan nomer pertama mu = ");
+                    int b = input.nextInt();
+                    System.out.print("Masukkan nomer kedua mu = ");
+                    int c = input.nextInt();
+                    int perjumlahan =  b + c ;
+                    System.out.print("Penjumlahan dari " + b  + " + " +  c + " = " + perjumlahan + "\n") ; 
+                    break;
+               case "Pengurangan" : 
+                    System.out.print("Masukkan nomer pertama mu = ");
+                    int e = input.nextInt();
+                    System.out.print("Masukkan nomer kedua mu = ");
+                    int f = input.nextInt();
+                    int pengurangan =  e - f ;
+                    System.out.print("Pengurangan dari " + e  + " - " +  f + " = " + pengurangan + "\n") ; 
+                    break;
+               case "Perkalian" :
+                    System.out.print("Masukkan nomer pertama mu = ");
+                    int g = input.nextInt();
+                    System.out.print("Masukkan nomer kedua mu = ");
+                    int h = input.nextInt();
+                    int perkalian =  g * h ;
+                    System.out.print("Perkalian dari " +  g + " * " +  h + " = " + perkalian + "\n") ; 
+                    break;
+                case "Pembagian" :
+                    System.out.print("Masukkan nomer pertama mu = ");
+                    int i = input.nextInt();
+                    System.out.print("Masukkan nomer kedua mu = ");
+                    int j = input.nextInt();
+                    int pembagian=  i / j ;
+                    System.out.print("Pembagian dari " +  i + " / " +  j + " = " + pembagian + "\n") ; 
+                    break;
+                case "Modulus" :
+                    System.out.print("Masukkan nomer pertama mu = ");
+                    int k = input.nextInt();
+                    System.out.print("Masukkan nomer kedua mu = ");
+                    int l = input.nextInt();
+                    int modulus=  k % l ;
+                    System.out.print("Sisa dari pembagian " +  k + " % " +  l + " = " + modulus + "\n") ; 
+                    break;
+               default :
+                   System.out.println("Maaf coba isi ulang.... \n");
+                   break;
+            }
+         }
+     }
+}
